@@ -1,0 +1,30 @@
+Tema:
+- Qualidade de fornecimento
+	- DEC
+	- FEC
+	- DIC
+	- FIC
+	- DMIC
+
+Gerar:
+- documento resumo
+- mapa mental ok
+- Cartões didaticos
+- testes
+Extra:
+- infografico
+
+Trabalho:
+"""Documento reunindo tudo isso"""
+- Estrutura ok
+- Bibliografia ok
+- Introdução
+- Metodologia ok
+- Desenvolvimento
+	- Fundamentos
+	- mapa mental
+	- resumo
+	- Cartões
+	- Testes de conhecimento
+	- Infográfico
+- Conclusão
