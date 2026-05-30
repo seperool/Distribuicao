@@ -68,15 +68,16 @@ import json
 
 Este trabalho foi desenvolvido a partir de uma abordagem prática que une a pesquisa bibliográfica tradicional ao uso de ferramentas de Inteligência Artificial (IA). A intenção foi aproveitar o potencial da tecnologia para otimizar o estudo, facilitando a síntese e a fixação de conceitos envolvidos na qualidade do fornecimento de energia elétrica.
 
-Para garantir a confiabilidade dos dados e evitar que a IA trouxesse informações incorretas — as chamadas alucinações —, a plataforma escolhida foi o NotebookLM. Essa ferramenta cria um ambiente de consulta fechado, baseando suas respostas apenas nos arquivos enviados pelo usuário. A base de dados utilizada foi restrita a duas fontes principais: o livro de referência "Introdução aos Sistemas de Distribuição de Energia Elétrica", de Nelson Kagan, Carlos César Barioni de Oliveira e Ernesto João Robba (2ª edição, Editora Blucher, 2010)(@kagan2010introducao), e o material de apoio pedagógico da disciplina, composto pelos slides da "Aula 4 - Qualidade de Fornecimento" (@slides_aula4_qualidade), preparados pelo professor Paulo Victor de Souza Borges no CEFET/RJ - Nova Friburgo.
+Para garantir a confiabilidade dos dados e evitar que a IA trouxesse informações incorretas — as chamadas alucinações —, a plataforma escolhida foi o NotebookLM. Essa ferramenta cria um ambiente de consulta fechado, baseando suas respostas apenas nos arquivos enviados pelo usuário. A base de dados utilizada foi restrita a três fontes principais: o livro de referência "Introdução aos Sistemas de Distribuição de Energia Elétrica", de Nelson Kagan, Carlos César Barioni de Oliveira e Ernesto João Robba (2ª edição, Editora Blucher, 2010) (@kagan2010introducao), o documento regulatório do PRODIST Módulo 8 da ANEEL (@aneel2026prodist8) e o material de apoio pedagógico da disciplina, composto pelos slides da "Aula 4 - Qualidade de Fornecimento" (@slides_aula4_qualidade), preparados pelo professor Paulo Victor de Souza Borges no CEFET/RJ - Nova Friburgo.
 
 Com as fontes devidamente controladas dentro da plataforma, o trabalho seguiu por duas etapas:
 
-  1.  Extração Teórica: Levantamento detalhado dos conceitos, critérios e fórmulas que definem os indicadores de continuidade (DIC, FIC, DMIC, DEC e FEC).
+   1. Extração Teórica: Levantamento detalhado dos conceitos, critérios e fórmulas que definem os indicadores de continuidade (DIC, FIC, DMIC, DEC e FEC).
 
-  2.  Geração de Artefatos Didáticos: Construção de comandos específicos na IA para estruturar cinco materiais de estudo: um resumo dinâmico, um mapa mental, cartões didáticos (flashcards), testes de conhecimento e um infográfico técnico.
+   2. Geração de Artefatos Didáticos: Construção de comandos específicos na IA para estruturar cinco materiais de estudo: um **resumo dinâmico**, um **mapa mental**, **cartões didáticos** (***flashcards***), **testes de conhecimento** e um **infográfico** técnico.
 
 Por fim, a escrita de todo o texto, a organização do conteúdo e a geração do arquivo PDF final foram feitas no ambiente de desenvolvimento Visual Studio Code (VS Code) com a ferramenta Quarto, o que garantiu uma formatação limpa e adequada aos padrões científicos.
+
 \newpage
 
 # DESENVOLVIMENTO
@@ -85,7 +86,126 @@ Por fim, a escrita de todo o texto, a organização do conteúdo e a geração d
 
 \newpage
 
-## Resumo
+## Resumo Dinâmico
+
+### Prompt
+
+A partir dos materiais fornecidos como fonte, crie um Resumo Dinâmico sobre a Qualidade do Fornecimento de Energia Elétrica, focando nos indicadores de continuidade.
+
+Orientações de escopo e fontes:
+
+  * Para a fundamentação teórica clássica e as equações matemáticas, baseie-se especificamente no Capítulo 8 (foco na seção 8.2) do livro do Nelson Kagan(@kagan2010introducao).
+
+  * Para a contextualização regulatória e os limites/padrões atuais vigentes, baseie-se no documento fornecido do PRODIST Módulo 8 da ANEEL.
+
+  * Em caso de qualquer divergência ou contradição em relação às fórmulas matemáticas entre os slides da Aula 4 e o livro do Nelson Kagan, adote estritamente a versão e as equações apresentadas no livro.
+
+  * Utilize os slides da Aula 4 do professor Paulo Victor para alinhar a abordagem pedagógica com a dinâmica da disciplina.
+
+Organize o resumo nos seguintes tópicos:
+
+  * Contextualização Regulatória: O papel do PRODIST Módulo 8 na qualidade da distribuição de energia no Brasil.
+
+  * Indicadores Individuais: Definição clara, critérios e fórmulas de cálculo para DIC, FIC e DMIC (conforme o capítulo 8.2 do livro).
+
+  * Indicadores Coletivos: Definição clara, critérios e fórmulas de cálculo para DEC e FEC (conforme o capítulo 8.2 do livro).
+
+  * Impacto e Aplicação: Como esses indicadores afetam o consumidor e o papel deles na regulação e fiscalização das distribuidoras.
+
+Importante: Mantenha rigorosamente as nomenclaturas e a precisão matemática das fórmulas do livro, cruzando com os conceitos regulatórios do PRODIST.
+
+\newpage
+
+### Resumo - Qualidade do Fornecimento de Energia Elétrica: Resumo Dinâmico de Indicadores de Continuidade
+
+Este documento apresenta uma análise técnica e regulatória sobre a qualidade do serviço de distribuição de energia elétrica no Brasil, com foco central nos indicadores de continuidade. A síntese integra os fundamentos teóricos de Nelson Kagan, as normas do PRODIST (ANEEL) e a abordagem pedagógica da disciplina para fornecer uma visão exaustiva do tema.
+
+1. Contextualização Regulatória: O Papel do PRODIST Módulo 8
+
+A regulação da qualidade do serviço de distribuição no Brasil é conduzida pela Agência Nacional de Energia Elétrica (ANEEL) por meio dos Procedimentos de Distribuição de Energia Elétrica no Sistema Elétrico Nacional (PRODIST). O Módulo 8 é o documento normativo que padroniza as atividades técnicas relacionadas à qualidade da energia elétrica.
+
+Importância e Evolução
+
+Historicamente, os sistemas de distribuição receberam menos atenção em modelagem de confiabilidade comparados à geração e transmissão, cujas falhas podem ser catastróficas e generalizadas. Contudo, estatísticas de concessionárias demonstram que a distribuição é o segmento que mais contribui individualmente para a indisponibilidade de fornecimento ao consumidor final.
+
+Com a privatização de grande parte das distribuidoras, o controle da qualidade tornou-se um pilar fundamental para garantir os direitos do consumidor e a universalização do acesso. O controle das interrupções permite que:
+
+   * Distribuidoras e Consumidores: Avaliem o desempenho do sistema e a qualidade do serviço prestado.
+   * ANEEL: Fiscalize e regule o setor, estabelecendo metas anuais, trimestrais e mensais para as concessionárias.
+
+2. Indicadores Individuais: DIC, FIC e DMIC
+
+Os indicadores individuais aferem a continuidade do fornecimento em cada unidade consumidora (UC). De acordo com o Módulo 8 do PRODIST e a fundamentação de Nelson Kagan, as definições e cálculos são os seguintes:
+
+DIC (Duração de Interrupção Individual por Unidade Consumidora)
+
+Exprime o tempo total que um consumidor específico ficou privado do fornecimento de energia elétrica em um período de apuração (mensal, trimestral ou anual).
+
+Fórmula (Conforme Nelson Kagan)(@kagan2010introducao): $DIC = \sum_{i=1}^{N} t(i)$
+
+   * $t(i)$: Duração da interrupção $i$.
+   * $N$: Número de ocorrências no período de estudo.
+
+FIC (Frequência de Interrupção Individual por Unidade Consumidora)
+
+Indica a quantidade de vezes que o consumidor experimentou interrupções no período de apuração.
+
+Fórmula (Conforme Nelson Kagan)(@kagan2010introducao): $FIC = N$
+
+   * $N$: Número total de interrupções ocorridas para a unidade consumidora no período de observação.
+
+DMIC (Duração Máxima de Interrupção Contínua por Unidade Consumidora)
+
+Representa o tempo da maior interrupção contínua de energia elétrica sofrida por uma unidade consumidora.
+
+Fórmula (Conforme Nelson Kagan)(@kagan2010introducao): $DMIC = \max_{i=1, \dots, N} \{t(i)\}$
+
+   * $t(i)$: Duração individual de cada evento de interrupção.
+
+3. Indicadores Coletivos: DEC e FEC
+
+Os indicadores coletivos avaliam o desempenho de um conjunto de unidades consumidoras (agrupamento de UCs de uma mesma área), refletindo a média de interrupções para esse grupo.
+
+DEC (Duração Equivalente de Interrupção por Unidade Consumidora)
+
+Exprime o tempo médio que cada consumidor do conjunto ficou sem energia elétrica no período considerado.
+
+Fórmula (Conforme Nelson Kagan)(@kagan2010introducao): $DEC = \frac{\sum_{i=1}^{N} C_a(i) \times t(i)}{C_s}$
+
+Variável	Definição
+$C_a(i)$	Número de consumidores atingidos na interrupção $i$.
+$t(i)$	Duração da interrupção $i$.
+$C_s$	Número total de consumidores existentes no conjunto/área em estudo.
+$N$	Número total de ocorrências no período.
+
+FEC (Frequência Equivalente de Interrupção por Unidade Consumidora)
+
+Indica quantas vezes, em média, as unidades consumidoras de um determinado conjunto sofreram interrupções.
+
+Fórmula (Conforme Nelson Kagan)(@kagan2010introducao): $FEC = \frac{\sum_{i=1}^{N} C_a(i)}{C_s}$
+
+   * O cálculo do FEC foca na abrangência das falhas em relação ao total de consumidores, sem considerar a duração das mesmas.
+
+4. Impacto e Aplicação na Regulação e Fiscalização
+
+A aplicação desses indicadores impacta diretamente a relação entre a distribuidora e o consumidor, além de nortear a fiscalização da ANEEL.
+
+Transparência e Faturamento
+
+Conforme o Módulo 8 do PRODIST, os valores mensais apurados de DIC, FIC e DMIC devem ser obrigatoriamente disponibilizados na fatura de energia elétrica. A conta deve exibir:
+
+   * Apurado Mensal: O valor real registrado para a unidade consumidora.
+   * Meta Mensal: O limite máximo de continuidade estabelecido pela ANEEL para aquele cliente.
+
+Violações e Compensações Financeiras
+
+Ocorre violação quando o valor apurado é superior à meta estabelecida. O consumidor tem o direito de receber uma compensação financeira caso as metas de continuidade individuais (mensais, trimestrais ou anuais) sejam violadas.
+
+   * Exemplo Real (2021): No Brasil, a disponibilidade média do serviço foi de 99,86%. Apesar disso, as distribuidoras pagaram R$ 718,5 milhões em compensações aos consumidores devido a violações de indicadores.
+
+Fiscalização das Distribuidoras
+
+A ANEEL utiliza o DEC e o FEC para classificar o desempenho das empresas. Concessionárias de grande porte (mais de 400 mil UCs) são avaliadas pelo DGC (Desempenho Global de Continuidade); quanto menor o índice, melhor a avaliação da empresa. A tendência histórica mostra que a regulação tem sido eficaz em reduzir os limites permitidos (metas da ANEEL) ao longo dos anos, forçando as empresas a investirem na redução da duração e frequência das interrupções.
 
 \newpage
 
@@ -104,6 +224,8 @@ Por fim, a escrita de todo o texto, a organização do conteúdo e a geração d
 \newpage
 
 ## Infográfico
+
+![Infográfico de indicadores de continuidade.](Data/Guia_de_Indicadores_de_Continuidade-Infografico.png){}
 
 \newpage
 
