@@ -91,7 +91,7 @@ Por fim, a escrita de todo o texto, a organização do conteúdo e a geração d
 
 ## Mapa Mental
 
-![Mapa mental com auxilio do NotebookLM.](NotebookLM Mind Map.png)
+![Mapa mental com auxilio do NotebookLM.](Data/NotebookLM_Mind_Map.png)
 
 \newpage
 
