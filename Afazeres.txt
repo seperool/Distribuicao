@@ -6,7 +6,7 @@ Status Geral: Em Andamento | Última Atualização: 30/05/2026
 LEGENDA DE STATUS:
 [ ] A fazer / Desenvolver
 [/] Em andamento / Revisando
-[X] Concluído / Pronto
+[x] Concluído / Pronto
 [!] Prioridade Máxima
 
 ----------------------------------------------------------------------
@@ -14,7 +14,7 @@ PRIORIDADE MÁXIMA (Próximos Passos no Texto)
 ----------------------------------------------------------------------
 [ ] Redigir a INTRODUÇÃO do trabalho (Contextualização e objetivos)
 [ ] Redigir a CONCLUSÃO (Considerações finais sobre os indicadores)
-[ ] Iniciar a escrita do DESENVOLVIMENTO (Fundamentos teóricos)
+[/] Iniciar a escrita do DESENVOLVIMENTO (Fundamentos teóricos)
 
 ----------------------------------------------------------------------
 EM ANDAMENTO (Criação de Conteúdo e Elementos Didáticos)
@@ -27,19 +27,19 @@ EM ANDAMENTO (Criação de Conteúdo e Elementos Didáticos)
 ----------------------------------------------------------------------
 CONCLUÍDO (Elementos da Estrutura Geral)
 ----------------------------------------------------------------------
-[X] Estrutura Geral do Trabalho definida
-[X] Metodologia estruturada
-[X] Bibliografia selecionada (PRODIST, Kagan, etc.)
-[X] Mapa Mental elaborado
+[x] Estrutura Geral do Trabalho definida
+[x] Metodologia estruturada
+[x] Bibliografia selecionada (PRODIST, Kagan, etc.)
+[x] Mapa Mental elaborado
 
 ----------------------------------------------------------------------
 CHECKLIST DO DOCUMENTO FINAL (Estrutura do Arquivo Único)
 ----------------------------------------------------------------------
-[X] 1. Estrutura Base
-[X] 2. Bibliografia
-[P] 3. Introdução
-[X] 4. Metodologia
-[P] 5. Desenvolvimento:
+[x] 1. Estrutura Base
+[x] 2. Bibliografia
+[/] 3. Introdução
+[x] 4. Metodologia
+[/] 5. Desenvolvimento:
     [ ] 5.1. Fundamentos Teóricos (Conceituação de DEC, FEC, DIC, FIC, DMIC)
     [!] 5.2. Mapa Mental integrado
     [!] 5.3. Documento Resumo incorporado
