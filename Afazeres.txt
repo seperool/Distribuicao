@@ -1,30 +1,63 @@
-Tema:
-- Qualidade de fornecimento
-	- DEC
-	- FEC
-	- DIC
-	- FIC
-	- DMIC
+======================================================================
+PROJETO: Trabalho Acadêmico - Qualidade de Fornecimento de Energia
+Status Geral: Em Andamento | Última Atualização: 30/05/2026
+======================================================================
 
-Gerar:
-- documento resumo
-- mapa mental ok
-- Cartões didaticos
-- testes
-Extra:
-- infografico
+LEGENDA DE STATUS:
+[ ] A fazer / Desenvolver
+[/] Em andamento / Revisando
+[X] Concluído / Pronto
+[!] Prioridade Máxima
 
-Trabalho:
-"""Documento reunindo tudo isso"""
-- Estrutura ok
-- Bibliografia ok
-- Introdução
-- Metodologia ok
-- Desenvolvimento
-	- Fundamentos
-	- mapa mental
-	- resumo
-	- Cartões
-	- Testes de conhecimento
-	- Infográfico
-- Conclusão
+----------------------------------------------------------------------
+PRIORIDADE MÁXIMA (Próximos Passos no Texto)
+----------------------------------------------------------------------
+[ ] Redigir a INTRODUÇÃO do trabalho (Contextualização e objetivos)
+[ ] Redigir a CONCLUSÃO (Considerações finais sobre os indicadores)
+[ ] Iniciar a escrita do DESENVOLVIMENTO (Fundamentos teóricos)
+
+----------------------------------------------------------------------
+EM ANDAMENTO (Criação de Conteúdo e Elementos Didáticos)
+----------------------------------------------------------------------
+[/] Gerar Documento Resumo (Síntese dos conceitos de qualidade)
+[/] Criar Cartões Didáticos (Flashcards para fixação de DEC, FEC, etc.)
+[/] Elaborar Testes de Conhecimento (Questões sobre os indicadores)
+[/] Desenvolver Infográfico [EXTRA] (Esquema visual do fornecimento)
+
+----------------------------------------------------------------------
+CONCLUÍDO (Elementos da Estrutura Geral)
+----------------------------------------------------------------------
+[X] Estrutura Geral do Trabalho definida
+[X] Metodologia estruturada
+[X] Bibliografia selecionada (PRODIST, Kagan, etc.)
+[X] Mapa Mental elaborado
+
+----------------------------------------------------------------------
+CHECKLIST DO DOCUMENTO FINAL (Estrutura do Arquivo Único)
+----------------------------------------------------------------------
+[X] 1. Estrutura Base
+[X] 2. Bibliografia
+[P] 3. Introdução
+[X] 4. Metodologia
+[P] 5. Desenvolvimento:
+    [ ] 5.1. Fundamentos Teóricos (Conceituação de DEC, FEC, DIC, FIC, DMIC)
+    [!] 5.2. Mapa Mental integrado
+    [!] 5.3. Documento Resumo incorporado
+    [!] 5.4. Cartões Didáticos inclusos
+    [!] 5.5. Testes de Conhecimento inseridos
+    [!] 5.6. Infográfico acoplado
+[ ] 6. Conclusão
+
+----------------------------------------------------------------------
+💡 ANOTAÇÕES DE SUPORTE E INFORMAÇÕES DO TEMA
+----------------------------------------------------------------------
+* Indicadores Coletivos (Custo/Duração do sistema):
+  - DEC: Duração Equivalente por Consumidor.
+  - FEC: Frequência Equivalente por Consumidor.
+
+* Indicadores Individuais (Impacto no consumidor final):
+  - DIC: Duração de Interrupção Individual por Unidade Consumidora.
+  - FIC: Frequência de Interrupção Individual por Unidade Consumidora.
+  - DMIC: Duração Máxima de Interrupção Contínua por Unidade Consumidora.
+
+* Lembrete: Alinhar os fundamentos teóricos rigorosamente com as regras de limites e metas do PRODIST (Módulo 8).
