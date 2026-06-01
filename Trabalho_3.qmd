@@ -211,7 +211,52 @@ A ANEEL utiliza o DEC e o FEC para classificar o desempenho das empresas. Conces
 
 ## Mapa Mental
 
-![Mapa mental com auxilio do NotebookLM.](Data/NotebookLM_Mind_Map.png)
+### Prompt
+
+A partir das fontes fornecidas — Capítulo 8 (seção 8.2) do livro do Nelson Kagan, slides da Aula 4 do professor Paulo Victor e o documento do PRODIST Módulo 8 —, estruture o conteúdo para a criação de um Mapa Mental sobre a Qualidade do Fornecimento (Indicadores de Continuidade).
+
+Como o objetivo é criar um mapa mental, organize a resposta estritamente em uma estrutura hierárquica de tópicos e subtópicos (usando recuos ou bullet points), dividida em 4 ramificações principais a partir do nó central:
+
+Nó Central: Qualidade do Fornecimento (Continuidade)
+
+   * Ramificação 1: Contexto e Regulação (Fonte: PRODIST Módulo 8)
+
+      * Órgão regulador (ANEEL).
+
+      * Objetivo dos indicadores (fiscalizar a continuidade do serviço e proteger o consumidor).
+
+      * Consequência da violação dos limites (compensações financeiras).
+
+   * Ramificação 2: Indicadores Individuais (Fonte: Livro do Kagan - Cap. 8.2)
+
+      * Subtópicos para DIC, FIC e DMIC: Para cada um, indique o nome por extenso, o que mede (tempo, frequência ou pior caso) e a unidade de medida.
+
+   * Ramificação 3: Indicadores Coletivos (Fonte: Livro do Kagan - Cap. 8.2)
+
+      * Subtópicos para DEC e FEC: Para cada um, indique o nome por extenso, o que mede (média de tempo ou frequência por conjunto de consumidores) e a unidade de medida.
+
+   * Ramificação 4: Regra de Ouro / Engenharia (Fonte: Alinhamento das fontes)
+
+      * Diferença crucial entre a visão individual (foco no consumidor) e coletiva (foco no sistema/conjunto).
+
+      * Prioridade matemática: Fórmulas oficiais extraídas estritamente do livro do Kagan.
+
+Orientações de formato: Não escreva parágrafos longos. Use apenas palavras-chave e frases curtíssimas para os nós, garantindo que a estrutura visual do mapa mental seja fácil de ler e montar.
+
+\newpage
+
+### Mapas mental
+
+![Mapa mental com auxilio do NotebookLM.](Data/NotebookLM-Mind_Map.png)
+
+![Mapa mental com auxilio do NotebookLM.](Data/NotebookLM-Mind_Map_1.png)
+
+\newpage
+
+![Mapa mental com auxilio do NotebookLM.](Data/NotebookLM-Mind_Map_2.png)
+
+![Mapa mental com auxilio do NotebookLM.](Data/NotebookLM-Mind_Map_3.png)
+
 
 \newpage
 
@@ -224,6 +269,32 @@ A ANEEL utiliza o DEC e o FEC para classificar o desempenho das empresas. Conces
 \newpage
 
 ## Infográfico
+
+### Prompt
+
+A partir do Capítulo 8 (especificamente a seção 8.2) do livro do Nelson Kagan, dos slides da Aula 4 do professor Paulo Victor e do documento do PRODIST Módulo 8, estruture o conteúdo conceitual e matemático para a criação de um Infográfico Técnico sobre os indicadores de continuidade.
+
+Como este conteúdo será usado em um infográfico, organize a resposta em blocos de texto curtos, diretos e esquemáticos, seguindo as diretrizes abaixo:
+
+   1. **Hierarquia de Fontes**: Para a definição das fórmulas e explicação das variáveis, baseie-se estritamente no livro do Nelson Kagan. Em caso de qualquer divergência com os slides, a versão do livro deve prevalecer. Use o PRODIST Módulo 8 para indicar quais desses indicadores são individuais e quais são coletivos sob a ótica regulatória da ANEEL.
+
+   2. **Estrutura por Indicador** (**DIC**, **FIC**, **DMIC**, **DEC**, **FEC**): Para cada um dos 5 indicadores, crie um bloco de informação contendo:
+
+      *  Nome por extenso e tipo: (Ex: DIC - Indicador Individual).
+
+      *  Conceito Direto: O que ele mede em apenas uma frase simples.
+
+      *  Equação Matemática: A fórmula exata em formato limpo.
+
+      *  Dicionário de Variáveis: O significado de cada letra/termo usado na fórmula e a unidade de medida (ex: horas, interrupções).
+
+   3. Seção de Fechamento (**O Impacto Regulatório**): Um pequeno bloco explicando o que acontece se a distribuidora violar os limites desses indicadores estabelecidos pelo PRODIST (ex: direito à compensação financeira ao consumidor).
+
+**Importante**: Evite parágrafos longos. Foque em listas (bullet points) e dados objetivos para facilitar a posterior diagramação visual do infográfico.
+
+\newpage
+
+### Infográfico
 
 ![Infográfico de indicadores de continuidade.](Data/Guia_de_Indicadores_de_Continuidade-Infografico.png){}
 
