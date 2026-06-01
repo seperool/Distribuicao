@@ -1,6 +1,6 @@
 ======================================================================
 PROJETO: Trabalho Acadêmico - Qualidade de Fornecimento de Energia
-Status Geral: Em Andamento | Última Atualização: 30/05/2026
+Status Geral: Em Andamento | Última Atualização: 31/05/2026
 ======================================================================
 
 LEGENDA DE STATUS:
