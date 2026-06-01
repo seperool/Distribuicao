@@ -62,6 +62,12 @@ import json
 
 # INTRODUÇÃO
 
+Garantir que a energia elétrica chegue sem interrupções às casas e indústrias é um dos maiores desafios da engenharia de distribuição. No Brasil, essa qualidade do serviço não é apenas uma meta técnica, mas uma exigência legal fiscalizada de perto pela ANEEL. É por meio do PRODIST Módulo 8 (@aneel2026prodist8) que a agência reguladora define as regras do jogo, estabelecendo limites rigorosos para o tempo e a quantidade de vezes que o consumidor pode ficar sem luz.
+
+Para medir se uma distribuidora está prestando um bom serviço, a engenharia e a regulação utilizam indicadores matemáticos de qualidade do serviço. Eles funcionam em duas frentes: os coletivos (DEC e FEC), que analisam o comportamento geral do sistema por conjuntos de consumidores (@kagan2010introducao), e os individuais (DIC, FIC e DMIC), que olham diretamente para a realidade de cada cliente em seu ponto de consumo. Dominar esses conceitos e suas fórmulas é indispensável para quem atua no setor elétrico.
+
+A assimilação dessa densidade de conceitos teóricos e regulatórios exige métodos de estudo eficientes durante a formação acadêmica. Diante disso, este trabalho propõe alinhar a fundamentação técnica a uma abordagem prática de aprendizado, demonstrando como o uso estratégico da Inteligência Artificial com fontes controladas pode otimizar a fixação desse conteúdo. Como resultado dessa proposta, foram desenvolvidos cinco materiais de apoio: um resumo dinâmico, um mapa mental, cartões didáticos (*flashcards*), testes de conhecimento e um infográfico técnico.
+
 \newpage
 
 # METODOLOGIA (O uso da IA com fontes controladas)
@@ -265,6 +271,32 @@ Orientações de formato: Não escreva parágrafos longos. Use apenas palavras-c
 \newpage
 
 ## Testes de Conhecimento
+
+### Prompt
+
+A partir das fontes fornecidas — Capítulo 8 (seção 8.2) do livro do Nelson Kagan, slides da Aula 4 do professor Paulo Victor e o documento do PRODIST Módulo 8 —, crie um Teste de Conhecimento abrangente sobre a Qualidade do Serviço, focado nos Indicadores de Continuidade.
+
+Não há um limite fixo para a quantidade de questões; gere quantas forem necessárias para cobrir os seguintes eixos temáticos:
+
+   1. Diferenciação de Escopo: Questões conceituais que avaliem a distinção clara entre os indicadores individuais (DIC, FIC, DMIC) e os indicadores coletivos (DEC, FEC), contrastando a ótica do ponto de consumo individual com a análise global do sistema/conjunto.
+
+   2. Contexto Regulatório e Impacto: Questões sobre as diretrizes do PRODIST Módulo 8 da ANEEL, abordando o estabelecimento de limites, a fiscalização e os mecanismos de compensação financeira ao consumidor em caso de violação dos padrões.
+
+   3. Interpretação Matemática e Variáveis: Questões que testem o entendimento das equações matemáticas de cada indicador (individuais e coletivos), baseando-se estritamente nas fórmulas e no dicionário de variáveis apresentados no capítulo 8.2 do livro do Nelson Kagan.
+
+   4. Análise de Cenários Práticos: Questões situacionais que apresentem eventos de interrupção (ex: desligamentos de grande porte em subestações versus falhas isoladas em ramais de ligação) e exijam a identificação de quais indicadores foram afetados.
+
+Formato da Resposta:
+
+   * Cada questão deve ser de múltipla escolha, contendo obrigatoriamente alternativas de A a E.
+
+   * Ao final do teste, apresente um Gabarito Comentado detalhado, explicando o motivo pelo qual a alternativa correta está certa e justificando brevemente o erro das opções incorretas, sempre amparado pelas fontes fornecidas.
+
+Importante: Mantenha a precisão técnica da engenharia e da regulação, garantindo o rigor matemático contido no livro do Kagan.
+
+\newpage
+
+### Teste
 
 \newpage
 
