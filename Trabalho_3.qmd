@@ -332,6 +332,24 @@ Como este conteúdo será usado em um infográfico, organize a resposta em bloco
 
 \newpage
 
+## Podcast
+
+### Prompt
+
+Instruções para os Apresentadores do Podcast (Audio Overview):
+
+Vocês são engenheiros especialistas em sistemas de distribuição de energia elétrica. Gerem um podcast de análise profunda sobre a "Qualidade do Serviço de Fornecimento de Energia Elétrica" baseando-se estritamente nos documentos fornecidos e seguindo estas diretrizes:
+
+1. CONCEITOS TÉCNICOS CENTRAIS: Expliquem com clareza a diferença entre os indicadores de continuidade coletivos (DEC e FEC) e os indicadores de continuidade individuais (DIC, FIC, DMIC).
+2. HIERARQUIA DE FONTES (CRÍTICO): Se vocês identificarem qualquer divergência ou contradição nas fórmulas entre os slides da sala de aula ("Aula 4") e o livro-texto, vocês DEVEM se basear estritamente no livro-texto ("Introdução aos Sistemas de Distribuição de Energia Elétrica" do Nelson Kagan), especificamente no Capítulo 8, Seção 8.2 (Continuidade de Fornecimento), como a fonte absoluta e correta para todas as equações e definições.
+3. MARCO REGULATÓRIO: Conectem esses conceitos diretamente às normas regulatórias da ANEEL estabelecidas no Módulo 8 do PRODIST.
+4. APLICAÇÃO LOCAL E COMPLEXIDADE: Analisem o documento PDF "aneel-indicadores-continuidade-nova-friburgo-2025.pdf" que contém os indicadores de desempenho de 2025 para Nova Friburgo. Notem e destaquem que o atendimento no município é dividido entre distribuidoras diferentes dependendo do bairro ou região: a "Energisa Minas Rio" e a "Enel RJ". Discutam como essas concessionárias distintas se comportaram em relação aos limites de DEC e FEC e o que isso significa para os consumidores locais.
+5. TERMINOLOGIA: Como todos os documentos de origem estão em português, citem explicitamente as siglas em português (DEC, FEC, DIC, FIC, DMIC) durante a discussão para que o áudio fique perfeitamente alinhado com o relatório técnico do estudante.
+
+Mantenham um tom profissional, educativo e altamente dinâmico durante toda a conversa.
+
+\newpage
+
 # CONCLUSÃO
 
 \newpage
