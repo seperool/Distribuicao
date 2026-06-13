@@ -62,11 +62,11 @@ import json
 
 # INTRODUÇÃO
 
-Garantir que a energia elétrica chegue sem interrupções às casas e indústrias é um dos maiores desafios da engenharia de distribuição. No Brasil, essa qualidade do serviço não é apenas uma meta técnica, mas uma exigência legal fiscalizada de perto pela ANEEL. É por meio do PRODIST Módulo 8 (@aneel2026prodist8) que a agência reguladora define as regras do jogo, estabelecendo limites rigorosos para o tempo e a quantidade de vezes que o consumidor pode ficar sem luz.
+Garantir que a energia elétrica chegue sem interrupções às casas e indústrias é um dos maiores desafios da engenharia de distribuição. No Brasil, essa qualidade do serviço não é apenas uma meta técnica, mas uma exigência legal fiscalizada de perto pela ANEEL. É por meio do PRODIST Módulo 8 (@aneel2026prodist8) que a agência reguladora define as regras do jogo, estabelecendo limites rigorosos para o tempo e a quantidade de vezes que o consumidor pode ficar sem luz. Dominar esses conceitos e suas fórmulas matemáticas é indispensável para quem atua no setor elétrico.
 
-Para medir se uma distribuidora está prestando um bom serviço, a engenharia e a regulação utilizam indicadores matemáticos de qualidade do serviço. Eles funcionam em duas frentes: os coletivos (DEC e FEC), que analisam o comportamento geral do sistema por conjuntos de consumidores (@kagan2010introducao), e os individuais (DIC, FIC e DMIC), que olham diretamente para a realidade de cada cliente em seu ponto de consumo. Dominar esses conceitos e suas fórmulas é indispensável para quem atua no setor elétrico.
+Para medir se uma distribuidora está prestando um bom serviço, a regulação utiliza indicadores coletivos (DEC e FEC), que analisam o comportamento geral do sistema por conjuntos de consumidores (@kagan2010introducao), e individuais (DIC, FIC e DMIC), que olham diretamente para a realidade de cada cliente em seu ponto de consumo. A assimilação dessa densidade de conceitos exige métodos de estudo eficientes.
 
-A assimilação dessa densidade de conceitos teóricos e regulatórios exige métodos de estudo eficientes durante a formação acadêmica. Diante disso, este trabalho propõe alinhar a fundamentação técnica a uma abordagem prática de aprendizado, demonstrando como o uso estratégico da Inteligência Artificial com fontes controladas pode otimizar a fixação desse conteúdo. Como resultado dessa proposta, foram desenvolvidos cinco materiais de apoio: um resumo dinâmico, um mapa mental, cartões didáticos (*flashcards*), testes de conhecimento e um infográfico técnico.
+Diante disso, este trabalho foca na criação usando fontes controladas junto à inteligência artificial NotebookLM e na análise deste mesmo material técnico, utilizado como ferramenta para compreender a aplicação prática desses indicadores. O objeto de estudo centrou-se no cenário regulatório e geográfico do município de Nova Friburgo referente ao ano de 2025 (@aneel_desempenho_2025). Como material complementar ao relatório, são adicionados também um resumo dinâmico, um mapa mental e um infográfico técnico.
 
 \newpage
 
@@ -74,13 +74,13 @@ A assimilação dessa densidade de conceitos teóricos e regulatórios exige mé
 
 Este trabalho foi desenvolvido a partir de uma abordagem prática que une a pesquisa bibliográfica tradicional ao uso de ferramentas de Inteligência Artificial (IA). A intenção foi aproveitar o potencial da tecnologia para otimizar o estudo, facilitando a síntese e a fixação de conceitos envolvidos na qualidade do fornecimento de energia elétrica.
 
-Para garantir a confiabilidade dos dados e evitar que a IA trouxesse informações incorretas — as chamadas alucinações —, a plataforma escolhida foi o NotebookLM. Essa ferramenta cria um ambiente de consulta fechado, baseando suas respostas apenas nos arquivos enviados pelo usuário. A base de dados utilizada foi restrita a três fontes principais: o livro de referência "Introdução aos Sistemas de Distribuição de Energia Elétrica", de Nelson Kagan, Carlos César Barioni de Oliveira e Ernesto João Robba (2ª edição, Editora Blucher, 2010) (@kagan2010introducao), o documento regulatório do PRODIST Módulo 8 da ANEEL (@aneel2026prodist8) e o material de apoio pedagógico da disciplina, composto pelos slides da "Aula 4 - Qualidade de Fornecimento" (@slides_aula4_qualidade), preparados pelo professor Paulo Victor de Souza Borges no CEFET/RJ - Nova Friburgo.
+Para garantir a confiabilidade dos dados e evitar que a IA trouxesse informações incorretas — as chamadas alucinações —, a plataforma escolhida foi o NotebookLM. Essa ferramenta cria um ambiente de consulta fechado, baseando suas respostas apenas nos arquivos enviados pelo usuário. A base de dados utilizada foi restrita a quatro fontes principais: o livro de referência "Introdução aos Sistemas de Distribuição de Energia Elétrica", de Nelson Kagan, Carlos César Barioni de Oliveira e Ernesto João Robba (2ª edição, Editora Blucher, 2010) (@kagan2010introducao), o documento regulatório do PRODIST Módulo 8 da ANEEL (@aneel2026prodist8), o material de apoio pedagógico da disciplina, composto pelos slides da "Aula 4 - Qualidade de Fornecimento" (@slides_aula4_qualidade), preparados pelo professor Paulo Victor de Souza Borges no CEFET/RJ - Nova Friburgo, e a base de dados contendo o estudo de caso sobre os indicadores do município de Nova Friburgo referente ao ano de 2025 (@aneel_desempenho_2025).
 
 Com as fontes devidamente controladas dentro da plataforma, o trabalho seguiu por duas etapas:
 
-   1. Extração Teórica: Levantamento detalhado dos conceitos, critérios e fórmulas que definem os indicadores de continuidade (DIC, FIC, DMIC, DEC e FEC).
+   1. Extração Teórica e Estudo de Caso: Levantamento detalhado dos conceitos, critérios e fórmulas que definem os indicadores de continuidade (DIC, FIC, DMIC, DEC e FEC) aplicados à realidade de Nova Friburgo.
 
-   2. Geração de Artefatos Didáticos: Construção de comandos específicos na IA para estruturar cinco materiais de estudo: um **resumo dinâmico**, um **mapa mental**, **cartões didáticos** (***flashcards***), **testes de conhecimento** e um **infográfico** técnico.
+   2. Geração e Análise do Material Técnico: Uso da plataforma para a criação do **podcast** técnico e posterior auditoria crítica de suas explicações em relação aos dados brutos. Como material complementar ao relatório, adicionou-se também um **resumo dinâmico**, um **mapa mental** e um **infográfico** técnico.
 
 Por fim, a escrita de todo o texto, a organização do conteúdo e a geração do arquivo PDF final foram feitas no ambiente de desenvolvimento Visual Studio Code (VS Code) com a ferramenta Quarto, o que garantiu uma formatação limpa e adequada aos padrões científicos.
 
@@ -88,7 +88,112 @@ Por fim, a escrita de todo o texto, a organização do conteúdo e a geração d
 
 # DESENVOLVIMENTO
 
-## Fundamentação Teórica (DIC, FIC, DEC, FEC, DMIC)
+## Fontes
+
+A seguir, detalha-se a importância e a justificativa para a escolha de cada uma das quatro fontes utilizadas:
+
+1. **Slides da Disciplina** ("Aula 4 – Qualidade do Fornecimento"): Delimitam o escopo pedagógico e os tópicos esperados no trabalho. Sua inclusão foi o ponto de partida da pesquisa e serviu para acender o alerta sobre inconsistências nas fórmulas, o que obrigou a buscar as fontes oficiais.
+
+2. **Livro-Texto** (Nelson Kagan, 2010 - Seção 8.2): Literatura consagrada na engenharia de distribuição, usada como o gabarito teórico e matemático absoluto do trabalho. Sua escolha foi indispensável para corrigir os erros conceituais encontrados nos slides e validar as equações de DEC, FEC e indicadores individuais.
+
+3. **Módulo 8 do PRODIST/ANEEL**: Entra para dar o embasamento legal do setor elétrico brasileiro. É a fonte que mostra como a matemática do livro se transforma, na prática, em metas contratuais, limites de tolerância e penalidades para as distribuidoras.
+
+4. **Dados Práticos de Desempenho Local** ("aneel-indicadores-continuidade-nova-friburgo-2025.pdf"):
+Este relatório técnico oficial da ANEEL, contendo os indicadores apurados no ano de referência de 2025 para Nova Friburgo, foi escolhido para ser o estudo de caso prático. A escolha justifica-se pela necessidade de retirar a análise do campo puramente abstrato, confrontando as metas da agência reguladora com a realidade operativa enfrentada pelos consumidores da região, evidenciando inclusive a complexidade da divisão de concessões (Energisa Minas Rio e Enel RJ) que operam no mesmo município.
+
+\newpage
+
+## Podcast
+
+### Prompt
+
+Instruções para os Apresentadores do Podcast (Audio Overview):
+
+Vocês são engenheiros especialistas em sistemas de distribuição de energia elétrica. Gerem um podcast de análise profunda sobre a "Qualidade do Serviço de Fornecimento de Energia Elétrica" baseando-se estritamente nos documentos fornecidos e seguindo estas diretrizes:
+
+1. CONCEITOS TÉCNICOS CENTRAIS: Expliquem com clareza a diferença entre os indicadores de continuidade coletivos (DEC e FEC) e os indicadores de continuidade individuais (DIC, FIC, DMIC).
+2. HIERARQUIA DE FONTES (CRÍTICO): Se vocês identificarem qualquer divergência ou contradição nas fórmulas entre os slides da sala de aula ("Aula 4") e o livro-texto, vocês DEVEM se basear estritamente no livro-texto ("Introdução aos Sistemas de Distribuição de Energia Elétrica" do Nelson Kagan), especificamente no Capítulo 8, Seção 8.2 (Continuidade de Fornecimento), como a fonte absoluta e correta para todas as equações e definições.
+3. MARCO REGULATÓRIO: Conectem esses conceitos diretamente às normas regulatórias da ANEEL estabelecidas no Módulo 8 do PRODIST.
+4. APLICAÇÃO LOCAL E COMPLEXIDADE: Analisem o documento PDF "aneel-indicadores-continuidade-nova-friburgo-2025.pdf" que contém os indicadores de desempenho de 2025 para Nova Friburgo. Notem e destaquem que o atendimento no município é dividido entre distribuidoras diferentes dependendo do bairro ou região: a "Energisa Minas Rio" e a "Enel RJ". Discutam como essas concessionárias distintas se comportaram em relação aos limites de DEC e FEC e o que isso significa para os consumidores locais.
+5. TERMINOLOGIA: Como todos os documentos de origem estão em português, citem explicitamente as siglas em português (DEC, FEC, DIC, FIC, DMIC) durante a discussão para que o áudio fique perfeitamente alinhado com o relatório técnico do estudante.
+
+Mantenham um tom profissional, educativo e altamente dinâmico durante toda a conversa.
+
+\newpage
+
+### Perguntas e Respostas – Análise Crítica do Podcast
+
+1. Quais foram os principais pontos positivos e negativos do podcast gerado pelo NotebookLM?
+
+   **Pontos Positivos**: O dinamismo e a naturalidade da conversa entre os apresentadores virtuais foram os maiores acertos. A IA foi muito feliz ao contextualizar e exemplificar as fórmulas de DEC, FEC, DIC, FIC e DMIC, recorrendo a analogias práticas excelentes, como comparar o fluxo de energia com o fluxo de água no abastecimento de residências para facilitar o entendimento técnico. Além disso, a ferramenta fez uma ótima análise do estudo de caso de Nova Friburgo, formulando teorias consistentes sobre os pontos mais curiosos e atípicos dos dados e amarrando tudo isso com a contextualização legal baseada no Módulo 8 do PRODIST.
+
+   **Pontos Negativos**: A principal limitação está na barreira do idioma nativo da IA, que gera o áudio em inglês. Isso causa uma dificuldade notável com a pronúncia de siglas em português (como DEC e FEC). Além disso, em alguns momentos a linha de voz "engasga" ou "come" algumas palavras. Embora essas pequenas falhas não cheguem a comprometer o entendimento geral ou a fluidez da conversa, elas deixam evidente que se trata de um áudio gerado por inteligência artificial.
+
+2. O conteúdo apresentado foi coerente e fiel às fontes utilizadas? Justifique sua resposta.
+
+   **Resposta**: Sim, o conteúdo manteve total fidelidade graças ao controle de fontes, permitindo que a IA amarrasse os documentos de forma complementar. Ficou evidente no podcast que a fundamentação teórica e as equações matemáticas foram extraídas diretamente do livro do Nelson Kagan.
+
+   O embasamento legal e a contextualização da norma técnica vieram do Módulo 8 do PRODIST. Por fim, os dados reais de DEC e FEC do ano de 2025 serviram como estudo de caso prático, permitindo que a IA saísse da teoria e gerasse diagnósticos reais sobre as condições operacionais do fornecimento em Nova Friburgo.
+
+3. Você identificou alguma informação incorreta, incompleta ou que exigiu consulta às fontes originais? Explique.
+
+   **Resposta**: Em termos de conteúdo puro, a ferramenta não apresentou informações incorretas ou incompletas. No entanto, houve uma clara necessidade de consultar as fontes originais devido à própria natureza das equações. Por mais que os apresentadores virtuais tenham feito um excelente trabalho ao contextualizar os conceitos e explicar a lógica matemática por áudio, assimilar formulações como as do DEC e do FEC de forma puramente auditiva é um desafio. Nesse caso, ter o livro do Nelson Kagan aberto para visualizar as fórmulas fez toda a diferença para fixar o aprendizado.
+
+   O segundo ponto que exigiu o retorno imediato às fontes originais foi o debate sobre o estudo de caso de Nova Friburgo. O podcast destacou um dado crítico: a concessionária Energisa Minas Rio apresentou um indicador DEC acima do limite estabelecido pela ANEEL para a região de "Centenário". A discussão desse cenário real foi muito bem conduzida no áudio, mas, por se tratar de uma análise de desempenho regulatório com penalidades envolvidas, o acompanhamento visual dos dados brutos no PDF oficial da ANEEL foi essencial para validar o diagnóstico e compreender a gravidade do descumprimento da meta.
+
+4. Quais foram os principais conceitos e indicadores de qualidade do fornecimento apresentados no podcast? Eles foram explicados de forma clara?
+
+   O podcast girou em torno dos indicadores de continuidade da ANEEL:
+
+   * **Indicadores Coletivos** (DEC e FEC): Focados no sistema como um todo. O DEC (Duração Equivalente de Interrupção) mede o tempo médio que os consumidores ficaram sem energia, enquanto o FEC (Frequência Equivalente de Interrupção) mede a quantidade média de vezes que o fornecimento caiu. A explicação foi extremamente clara, pois o áudio não se limitou às siglas; ele humanizou os conceitos mostrando que o DEC reflete a demora da distribuidora em consertar os problemas (tempo de reparo) e o FEC reflete a fragilidade da rede em sofrer desarmes (manutenção preventiva).
+
+   * **Indicadores Individuais** (DIC, FIC e DMIC): Focados no impacto direto na casa de cada cliente. Foram explicados o DIC (Duração de Interrupção Individual), o FIC (Frequência de Interrupção Individual) e o DMIC (Duração Máxima de Interrupção Contínua). O podcast foi muito feliz ao esclarecer a importância dessa separação, deixando claro que um consumidor pode ter sua energia severamente afetada (estourando seus limites individuais) mesmo que a média global do município (indicadores coletivos) pareça sob controle.
+
+   A ferramenta também explicou de forma bem prática como esses estouros geram compensações financeiras automáticas na conta de luz, deixando o conceito regulatório bem fácil de entender.
+
+   Por fim, amarra tudo isso com os impactos regulatórios práticos previstos no PRODIST, olhando pros dois lados da ponta. Para os consumidores, o áudio detalhou o direito de receber o serviço dentro dos padrões e ser ressarcido pelas falhas. Para as distribuidoras, explicou o peso de operar fora das metas da ANEEL, o que envolve desde o prejuízo com as compensações diretas nas faturas até o risco de penalidades pesadas na gestão da concessão.
+
+5. O podcast contribuiu para sua compreensão sobre a importância da qualidade do serviço de fornecimento de energia elétrica? De que forma?
+
+   **Resposta**: Sim, principalmente ao enfatizar a importância dos indicadores individuais frente aos dados coletivos. Como os indicadores coletivos (DEC e FEC) funcionam como uma média global da cidade, eles carregam intrinsecamente o risco de dissolver os piores cenários. Na prática, alguns consumidores podem ser severamente afetados por quedas constantes e demoradas sem que isso apareça de maneira significativa no balanço geral do município. O grande estalo foi perceber como os indicadores individuais (DIC, FIC e DMIC) corrigem essa distorção estatística, funcionando como uma ferramenta de justiça regulatória que protege o cidadão de forma isolada.
+
+   Além disso, o estudo de caso detalhado pela IA ajudou a enxergar os pormenores de um cenário real de DEC e FEC e suas implicações práticas. O debate evidenciou o contraste entre as regiões maiores e mais importantes — que concentram o maior número de casas e provavelmente contam com um sistema mais robusto e atualizado — e as áreas mais afastadas. Embora o desempenho geral de Nova Friburgo não seja alarmante, a análise geográfica torna as falhas compreensíveis: por ser uma região de serra, distante do grande centro do Rio, cheia de vales, montanhas e cercada por Mata Atlântica, os distritos no interior do município enfrentam empecilhos severos de acesso para manutenção, o que explica a precariedade e o estouro de metas nessas pontas da rede.
+
+6. Quantas vezes você ouviu o podcast e em quais situações ou locais realizou essa escuta?
+
+   **Resposta**: O podcast foi ouvido duas vezes no total, e ambas as escutas aconteceram no meu ambiente principal de estudos, em frente ao computador. A primeira vez foi focada em absorver todo o contexto e compreender o conteúdo gerado como um todo, garantindo uma excelente visão macro do assunto, além de validar se a inteligência artificial tinha captado corretamente as diretrizes do prompt e estruturado o debate técnico sem desvios.
+
+   A segunda escuta foi parando o áudio constantemente para fazer anotações. O objetivo dessa etapa foi puramente de análise e auditoria: usei o áudio como guia prático enquanto confrontava os dados apresentados pelos apresentadores virtuais diretamente com as tabelas, gráficos e relatórios em PDF do estudo de caso de Nova Friburgo, garantindo a exatidão das informações para o relatório técnico.
+
+7. O formato em áudio facilitou sua aprendizagem em comparação com a leitura tradicional dos materiais? Justifique.
+
+   **Resposta**: Para o meu perfil de estudo, eu ainda prefiro o texto, pois a leitura tradicional me dá o controle do ritmo necessário para absorver os detalhes. No entanto, o formato em áudio foi de grande ajuda e complementou o aprendizado. A inteligência artificial conseguiu captar pormenores e conexões nas fontes que eu mesmo não tinha me atentado em uma primeira leitura.
+
+   O grande mérito do podcast foi a fluidez na amarração dos conteúdos: a IA conseguiu conectar de forma natural o uso de analogias cotidianas, a explicação dos cálculos e das fórmulas e, logo em sequência, o cruzamento de fontes que desaguou nas consequências regulatórias do PRODIST. Essa capacidade de encaixar a teoria matemática diretamente com o impacto prático na concessão tornou o estudo muito mais dinâmico e menos engessado, provando que o áudio é um excelente aliado quando integrado à leitura tradicional.
+
+8. Quais são as principais vantagens e limitações do uso de inteligência artificial para estudar conteúdos técnicos do setor elétrico?
+
+   * **Vantagens**:
+
+     * **Visão macro e conexões**: A ferramenta é excelente para cruzar fontes diferentes de forma fluida, amarrando a teoria matemática com as consequências regulatórias práticas de um jeito dinâmico.
+
+     * **Didática acessível**: O uso de analogias cotidianas facilita a introdução de temas densos e ajuda a fixar os conceitos principais.
+
+     * **Identificação de pormenores**: A IA consegue pescar insights e detalhes nos textos que podem passar batidos em uma primeira leitura tradicional.
+
+   * **Limitações**:
+
+     * **Abstração matemática**: O formato puramente em áudio falha ao tentar transmitir fórmulas complexas, tornando a assimilação de cálculos difícil sem o suporte visual.
+
+     * **Restrição de escopo e dados**: A dificuldade de obter os dados da ANEEL de forma simples em PDF forçou a limitação do estudo a uma região e recorte temporal específicos. Isso impediu uma análise temporal mais ampla, evidenciando uma barreira no cruzamento do NotebookLM com a base da agência reguladora.
+
+     * **Auditoria de dados brutos**: Para análises regulatórias profundas e estudos de caso complexos, o formato em áudio é insuficiente; seriam necessários mais tempo e outros formatos para validar as tabelas originais.
+
+     * **Controle de ritmo**: A escuta não substitui a leitura tradicional no quesito de permitir que o aluno dite seu próprio tempo de absorção dos detalhes.
+
+9.  Após realizar a atividade, você considera o NotebookLM uma ferramenta útil para auxiliar seu aprendizado? Explique sua resposta.
+    
+    **Resposta**: Sim, considero útil como uma ferramenta complementar de estudo, mas não substitutiva. O NotebookLM é ótimo para o cruzamento de dados e fontes, entregando uma visão macro e fluida do tema, conectando os materiais através de analogias didáticas e apontando pormenores que poderiam passar batidos na primeira leitura. No entanto, sua utilidade esbarra no formato puramente em áudio, que é insuficiente para o detalhamento técnico, como a visualização de fórmulas matemáticas, o controle individual do ritmo de estudo e a auditoria rigorosa de dados brutos.
 
 \newpage
 
@@ -253,50 +358,16 @@ Orientações de formato: Não escreva parágrafos longos. Use apenas palavras-c
 
 ### Mapas mental
 
-![Mapa mental com auxilio do NotebookLM.](Data/NotebookLM-Mind_Map.png)
+![Mapa mental geral.](Data/NotebookLM-Mind_Map.png)
 
-![Mapa mental com auxilio do NotebookLM.](Data/NotebookLM-Mind_Map_1.png)
-
-\newpage
-
-![Mapa mental com auxilio do NotebookLM.](Data/NotebookLM-Mind_Map_2.png)
-
-![Mapa mental com auxilio do NotebookLM.](Data/NotebookLM-Mind_Map_3.png)
-
+![Mapa mental, foco na regulação.](Data/NotebookLM-Mind_Map_1.png)
 
 \newpage
 
-## Cartões Didáticos
+![Mapa mental, foco nos indicadores individuais.](Data/NotebookLM-Mind_Map_2.png)
 
-\newpage
+![Mapa mental, foco nos indicadores coletivos.](Data/NotebookLM-Mind_Map_3.png)
 
-## Testes de Conhecimento
-
-### Prompt
-
-A partir das fontes fornecidas — Capítulo 8 (seção 8.2) do livro do Nelson Kagan, slides da Aula 4 do professor Paulo Victor e o documento do PRODIST Módulo 8 —, crie um Teste de Conhecimento abrangente sobre a Qualidade do Serviço, focado nos Indicadores de Continuidade.
-
-Não há um limite fixo para a quantidade de questões; gere quantas forem necessárias para cobrir os seguintes eixos temáticos:
-
-   1. Diferenciação de Escopo: Questões conceituais que avaliem a distinção clara entre os indicadores individuais (DIC, FIC, DMIC) e os indicadores coletivos (DEC, FEC), contrastando a ótica do ponto de consumo individual com a análise global do sistema/conjunto.
-
-   2. Contexto Regulatório e Impacto: Questões sobre as diretrizes do PRODIST Módulo 8 da ANEEL, abordando o estabelecimento de limites, a fiscalização e os mecanismos de compensação financeira ao consumidor em caso de violação dos padrões.
-
-   3. Interpretação Matemática e Variáveis: Questões que testem o entendimento das equações matemáticas de cada indicador (individuais e coletivos), baseando-se estritamente nas fórmulas e no dicionário de variáveis apresentados no capítulo 8.2 do livro do Nelson Kagan.
-
-   4. Análise de Cenários Práticos: Questões situacionais que apresentem eventos de interrupção (ex: desligamentos de grande porte em subestações versus falhas isoladas em ramais de ligação) e exijam a identificação de quais indicadores foram afetados.
-
-Formato da Resposta:
-
-   * Cada questão deve ser de múltipla escolha, contendo obrigatoriamente alternativas de A a E.
-
-   * Ao final do teste, apresente um Gabarito Comentado detalhado, explicando o motivo pelo qual a alternativa correta está certa e justificando brevemente o erro das opções incorretas, sempre amparado pelas fontes fornecidas.
-
-Importante: Mantenha a precisão técnica da engenharia e da regulação, garantindo o rigor matemático contido no livro do Kagan.
-
-\newpage
-
-### Teste
 
 \newpage
 
@@ -329,28 +400,6 @@ Como este conteúdo será usado em um infográfico, organize a resposta em bloco
 ### Infográfico
 
 ![Infográfico de indicadores de continuidade.](Data/Guia_de_Indicadores_de_Continuidade-Infografico.png){}
-
-\newpage
-
-## Podcast
-
-### Prompt
-
-Instruções para os Apresentadores do Podcast (Audio Overview):
-
-Vocês são engenheiros especialistas em sistemas de distribuição de energia elétrica. Gerem um podcast de análise profunda sobre a "Qualidade do Serviço de Fornecimento de Energia Elétrica" baseando-se estritamente nos documentos fornecidos e seguindo estas diretrizes:
-
-1. CONCEITOS TÉCNICOS CENTRAIS: Expliquem com clareza a diferença entre os indicadores de continuidade coletivos (DEC e FEC) e os indicadores de continuidade individuais (DIC, FIC, DMIC).
-2. HIERARQUIA DE FONTES (CRÍTICO): Se vocês identificarem qualquer divergência ou contradição nas fórmulas entre os slides da sala de aula ("Aula 4") e o livro-texto, vocês DEVEM se basear estritamente no livro-texto ("Introdução aos Sistemas de Distribuição de Energia Elétrica" do Nelson Kagan), especificamente no Capítulo 8, Seção 8.2 (Continuidade de Fornecimento), como a fonte absoluta e correta para todas as equações e definições.
-3. MARCO REGULATÓRIO: Conectem esses conceitos diretamente às normas regulatórias da ANEEL estabelecidas no Módulo 8 do PRODIST.
-4. APLICAÇÃO LOCAL E COMPLEXIDADE: Analisem o documento PDF "aneel-indicadores-continuidade-nova-friburgo-2025.pdf" que contém os indicadores de desempenho de 2025 para Nova Friburgo. Notem e destaquem que o atendimento no município é dividido entre distribuidoras diferentes dependendo do bairro ou região: a "Energisa Minas Rio" e a "Enel RJ". Discutam como essas concessionárias distintas se comportaram em relação aos limites de DEC e FEC e o que isso significa para os consumidores locais.
-5. TERMINOLOGIA: Como todos os documentos de origem estão em português, citem explicitamente as siglas em português (DEC, FEC, DIC, FIC, DMIC) durante a discussão para que o áudio fique perfeitamente alinhado com o relatório técnico do estudante.
-
-Mantenham um tom profissional, educativo e altamente dinâmico durante toda a conversa.
-
-\newpage
-
-# CONCLUSÃO
 
 \newpage
 
